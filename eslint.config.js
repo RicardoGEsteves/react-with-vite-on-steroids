@@ -3,7 +3,8 @@ import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import react from 'eslint-plugin-react';
-import eslintConfigPrettier from 'eslint-config-prettier';
+import prettier from 'eslint-config-prettier';
+import playwright from 'eslint-plugin-playwright';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config({
@@ -11,13 +12,22 @@ export default tseslint.config({
     js.configs.recommended,
     ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
-    eslintConfigPrettier,
+    prettier,
   ],
   files: ['**/*.{ts,tsx}'],
   linterOptions: {
     reportUnusedDisableDirectives: true,
   },
-  ignores: ['dist', 'node_modules'],
+  ignores: [
+    'dist',
+    'node_modules',
+    'coverage',
+    'build',
+    '/test-results/',
+    '/playwright-report/',
+    '**/*.spec.ts',
+    'playwright.config.ts',
+  ],
   languageOptions: {
     ecmaVersion: 2020,
     globals: globals.browser,
@@ -30,6 +40,7 @@ export default tseslint.config({
   plugins: {
     'react-hooks': reactHooks,
     'react-refresh': reactRefresh,
+    ...playwright.configs['flat/recommended'],
     react,
   },
   rules: {

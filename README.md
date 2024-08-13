@@ -13,6 +13,7 @@ A powerful and efficient starter template for building React applications with V
 - **Vitest**: A blazing fast unit test framework.
 - **Testing Library**: Simple and complete testing utilities.
 - **Playwright**: End-to-end testing framework.
+- **Husky**: Git hooks, pre-commit hooks, and more.
 
 ## Getting Started
 
@@ -142,3 +143,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 - [Vitest](https://vitest.dev/)
 - [Testing Library](https://testing-library.com/)
 - [Playwright](https://playwright.dev/)
+- [Husky](https://typicode.github.io/husky/)
