@@ -13,6 +13,11 @@ export default defineConfig({
       },
     ],
   },
+  // or can also use the following
+  // resolve: {
+  //     alias: {
+  //     "@": path.resolve(__dirname, "./src"),
+  //   },
   test: {
     globals: true,
     environment: 'jsdom',
@@ -20,5 +25,14 @@ export default defineConfig({
     coverage: {
       include: ['src/**/*.{js,jsx,ts,tsx}'],
     },
+    exclude: [
+      '**/*.spec.{js,jsx,ts,tsx}',
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/cypress/**',
+      '**/playwright/**',
+      '**/.{idea,git,cache,output,temp}/**',
+      '**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build,eslint,prettier}.config.*',
+    ],
   },
 });

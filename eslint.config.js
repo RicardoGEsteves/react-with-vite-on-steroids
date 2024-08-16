@@ -10,7 +10,8 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config({
   extends: [
     js.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.recommended,
+    // ...tseslint.configs.recommendedTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
     prettier,
   ],
