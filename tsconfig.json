@@ -3,5 +3,19 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+
+  /**
+   * Configures the base URL and path aliases for the TypeScript compiler.
+   *
+   * The `baseUrl` option specifies the base directory to resolve non-relative module names.
+   * The `paths` option allows defining path mapping rules to remap imports to different locations.
+   * In this case, the `@/*` path alias is mapped to `./src/*`, allowing imports like `@/components/MyComponent` to resolve to `./src/components/MyComponent`.
+   */
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
