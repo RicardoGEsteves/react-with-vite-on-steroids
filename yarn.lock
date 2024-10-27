@@ -1526,10 +1526,10 @@ eslint-config-prettier@9.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
   integrity sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
 
-eslint-plugin-playwright@1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-playwright/-/eslint-plugin-playwright-1.8.3.tgz#00d86f3d59669c4bafd5c76d4d923bc2f0a67772"
-  integrity sha512-h87JPFHkz8a6oPhn8GRGGhSQoAJjx0AkOv1jME6NoMk2FpEsfvfJJNaQDxLSqSALkCr0IJXPGTnp6SIRVu5Nqg==
+eslint-plugin-playwright@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-playwright/-/eslint-plugin-playwright-2.0.0.tgz#efca4efa2f2e7a1cceeb31bbb0a6ab0bc53ddd79"
+  integrity sha512-nPa44nSp48mp/U+GSneabrhlyIyGvrcv+Z14u6sgno+jX8N0bH+ooSLEC1L6dvMDSHs7tj+kMIbls3l8gCJJSg==
   dependencies:
     globals "^13.23.0"
 
