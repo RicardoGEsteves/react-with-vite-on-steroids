@@ -36,7 +36,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-playwright": "2.0.1",
     "eslint-plugin-react": "7.37.2",
-    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-react-hooks": "5.1.0-rc.1",
     "eslint-plugin-react-refresh": "0.4.14",
     "globals": "15.12.0",
     "husky": "9.1.6",
