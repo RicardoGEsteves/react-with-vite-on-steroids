@@ -16,8 +16,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "9.17.0",
@@ -27,7 +27,7 @@
     "@testing-library/react": "16.1.0",
     "@testing-library/user-event": "14.5.2",
     "@types/node": "22.10.2",
-    "@types/react": "18.3.16",
+    "@types/react": "19.0.1",
     "@types/react-dom": "18.3.5",
     "@vitejs/plugin-react-swc": "3.7.2",
     "@vitest/coverage-v8": "2.1.8",
